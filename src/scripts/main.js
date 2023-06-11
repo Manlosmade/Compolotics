@@ -19,9 +19,10 @@ function Typewrite(Alpha, Beta) {
         setTimeout(Typewrite, speed, Alpha, Beta)
     }
 }
-let y = 0
-if(y == 0) {
-    Typewrite(typewriterContainer, message[y])
-    y++
-    setTimeout(Typewrite, 10000, typewriterContainer, message[2])
-} 
+
+
+Typewrite(typewriterContainer, message[0])
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+Typewrite(document.getElementById("app1"), message[1])
+Typewrite(typewriterContainer, message[2])
+ 
