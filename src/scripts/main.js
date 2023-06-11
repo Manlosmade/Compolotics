@@ -19,7 +19,9 @@ function Typewrite(Alpha, Beta) {
         setTimeout(Typewrite, speed, Alpha, Beta)
     }
 }
-
-
-    Typewrite(typewriterContainer, message[0])
-
+let y = 0
+if(y == 0) {
+    Typewrite(typewriterContainer, message[y])
+    y++
+    setTimeout(Typewrite, 10000, typewriterContainer, message[2])
+} 
