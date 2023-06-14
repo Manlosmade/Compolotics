@@ -1,5 +1,5 @@
 const typewriterContainer = document.getElementById("app")
-const message = ["Test alpha", "Test beta", "Test Delta"]
+const message = ["This is a computing blog?", "This is a politics blog?", "No, This is a compolotics blog."]
 const sleep = (milliseconds) =>
     new Promise((resolve) => setTimeout(resolve, milliseconds));
 
@@ -27,10 +27,10 @@ async function TypewriteBeta() {
 }
 
 while(true) {
-Typewriter(typewriterContainer, message[0], 2300, 100, 50)
-await sleep(3500)
-Typewriter(typewriterContainer, message[1], 2300, 100, 50)
-await sleep(3500)
-Typewriter(typewriterContainer, message[2], 2300, 100, 50)
-await sleep(3500)
+Typewriter(typewriterContainer, message[0], 3200, 124, 51)
+await sleep(5000)
+Typewriter(typewriterContainer, message[1], 3200, 104, 42)
+await sleep(5000)
+Typewriter(typewriterContainer, message[2], 3200, 94, 59)
+await sleep(5000)
 }
