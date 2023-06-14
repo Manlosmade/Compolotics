@@ -32,5 +32,5 @@ await sleep(5000)
 Typewriter(typewriterContainer, message[1], 3200, 104, 42)
 await sleep(5000)
 Typewriter(typewriterContainer, message[2], 3200, 94, 59)
-await sleep(5000)
+await sleep(7000)
 }

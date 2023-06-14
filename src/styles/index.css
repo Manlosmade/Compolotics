@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    color: white;
+    background-color: black;
+}
+
+
+#app {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 7vw;
+    margin: 4vw 0vw 4vw 1vw;
+}
+
