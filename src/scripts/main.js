@@ -36,8 +36,11 @@ async function Typewriter(containerElement, text) {
     for(let i = 0; i < text.length; i++) {
         containerElement.innerHTML += text.charAt(i);      
         await sleep(100)
-
     } 
+    for(let i = 0; i != text.length; i++) {
+        containerElement.innerHTML = containerElement.innerHTML.slice(0, -1) 
+        await sleep(100)
+    }
 
 }
 
