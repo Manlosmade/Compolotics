@@ -1,0 +1,17 @@
+---
+const { title, img, description, tags } = Astro.props
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div class="cards" id="cardsContainer">
+    <h1 class="cards">{title}</h1>
+    <img class="cards" src={img}>
+    <p class="cards">{description}</p>
+    <p class="cards">{tags}</p>
+    <link rel="stylesheet" href="src/styles/index.css">
+</body>
+</html>

@@ -3,13 +3,40 @@
     box-sizing: border-box;
     padding: 0;
     color: white;
-    background-color: black;
+    background-color: #050318;
 }
 
 
 #app {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 7vw;
-    margin: 4vw 0vw 4vw 1vw;
+    margin: 7vw 0vw 0vw 1vw;
+        position: absolute;
+
 }
 
+
+#cloudsImage {
+    opacity: 30%;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+
+}
+
+.cards {
+    opacity: 70%;
+    background-color: #808080;
+    
+}
+
+#cardsContainer {
+    margin: 1vw;
+    width: 20%;
+    height: 10vw;
+
+}
+
+#cardsIndexContainer {
+    display: flex;
+}

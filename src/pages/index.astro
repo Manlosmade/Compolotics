@@ -1,4 +1,6 @@
 ---
+const allPosts = await Astro.glob('../content/blog/*.md');
+import Cards from '../layouts/cards.astro'
 ---
 <html lang="en">
 	<head>
@@ -12,8 +14,14 @@
 		  </style>
 	</head>
 	<body>
+		<img src="/Clouds.png" alt="Clouds" id="cloudsImage">
+
 		<h1 id="app"></h1>
 
 		<script src="../scripts/main.js"></script>
-	</body>
+		<div id="cardsIndexContainer"> 
+
+		{allPosts.slice(-4).map((post) => <Cards title={post.frontmatter.title} description={post.frontmatter.description} img={post.frontmatter.image} tags={post.frontmatter.tags}/>)}
+		</div>
+		</body>
 </html>
